@@ -1,7 +1,7 @@
 {% assign publications=site.data.publications | sort: "date" | reverse %}
 {% for pub in publications %}
     <p class="container">
-        <div class="font-weight-bolder lead">{{ pub.title }}</div>
+        <div class="font-weight-bolder lead">{{ pub.title }} {% if forloop.first == true %}<span class="badge bg-success text-white">New</span>{% endif %}</div>
         <div class="">{{ pub.authors | replace: "Christian Hafner", "<b>Christian Hafner</b>" }}</div>
         <div class="text-muted small">{{ pub.published }}</div>
         <a class="text-primary" href="{{ pub.projectpage }}">Project Page</a>
