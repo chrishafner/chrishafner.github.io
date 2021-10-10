@@ -1,0 +1,30 @@
+- title: The Design Space of Plane Elastic Curves
+  authors: Christian Hafner, Bernd Bickel
+  date: 2021-08-09
+  published: ACM Transactions on Graphics (Siggraph 2021)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2021/TDSOPEC/
+- title: "X-CAD: Optimizing CAD Models with Extended Finite Elements"
+  authors: Christian Hafner, Christian Schumacher, Espen Knoop, Thomas Auzinger, Bernd Bickel, Moritz Bächer
+  date: 2019-11-16
+  published: ACM Transactions on Graphics (Siggraph Asia 2019)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2019/XCAD/
+- title: "Making Procedural Water Waves Boundary-Aware"
+  authors: Stefan Jeschke, Christian Hafner, Nuttapong Chentanez, Miles Macklin, Matthias Müller-Fischer, Chris Wojtan
+  date: 2020-10-06
+  published: Computer Graphics Forum (SCA 2020)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2020/MPWWBa/
+- title: "Fundamental Solutions for Water Wave Animation"
+  authors: Camille Schreck, Christian Hafner, Chris Wojtan
+  date: 2019-07-12
+  published: ACM Transactions on Graphics (Siggraph 2019)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2019/FundamentalSolutionForWaterWave/
+- title: Non-Linear Shape Optimization Using Local Subspace Projections
+  authors: Przemyslaw Musialski*, Christian Hafner*, Florian Rist, Michael Birsak, Michael Wimmer, Leif Kobbelt  (* joint 1st authors)
+  date: 2016-07-11
+  published: ACM Transactions on Graphics (Siggraph 2016)
+  projectpage: https://www.cg.tuwien.ac.at/research/publications/2016/musialski_2016_sosp/
+- title: Optimization of Natural Frequencies for Fabrication-Aware Shape Modeling
+  authors: Christian Hafner, Przemyslaw Musialski, Thomas Auzinger, Michael Wimmer, Leif Kobbelt
+  date: 2015-07-31
+  published: ACM Siggraph 2015 Posters
+  projectpage: https://dl.acm.org/doi/10.1145/2787626.2787644
