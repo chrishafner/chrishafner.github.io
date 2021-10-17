@@ -3,28 +3,46 @@
   date: 2021-08-09
   published: ACM Transactions on Graphics (Siggraph 2021)
   projectpage: https://visualcomputing.ist.ac.at/publications/2021/TDSOPEC/
+  paperlink: http://pub.ist.ac.at/~chafner/ElasticCurves2021/elastic-curves-paper.pdf
+  image: img/elastic-curves-grsi-repr.png
+  blurb: "A paper about the shapes we can make by bending paper strips."
 - title: "X-CAD: Optimizing CAD Models with Extended Finite Elements"
   authors: Christian Hafner, Christian Schumacher, Espen Knoop, Thomas Auzinger, Bernd Bickel, Moritz Bächer
   date: 2019-11-16
   published: ACM Transactions on Graphics (Siggraph Asia 2019)
   projectpage: https://visualcomputing.ist.ac.at/publications/2019/XCAD/
+  paperlink: https://research-explorer.app.ist.ac.at/download/7117/7120/XCAD_authors_version.pdf
+  image: img/xcad.png
+  blurb: "A paper about chopping up CAD models into cubes."
 - title: "Making Procedural Water Waves Boundary-Aware"
   authors: Stefan Jeschke, Christian Hafner, Nuttapong Chentanez, Miles Macklin, Matthias Müller-Fischer, Chris Wojtan
   date: 2020-10-06
   published: Computer Graphics Forum (SCA 2020)
   projectpage: https://visualcomputing.ist.ac.at/publications/2020/MPWWBa/
+  paperlink: http://pub.ist.ac.at/~chafner/JeschkeWaveCages.pdf
+  image: img/boundary-waves.png
+  blurb: "A paper about beautiful waves rolling up the beach."
 - title: "Fundamental Solutions for Water Wave Animation"
   authors: Camille Schreck, Christian Hafner, Chris Wojtan
   date: 2019-07-12
   published: ACM Transactions on Graphics (Siggraph 2019)
   projectpage: https://visualcomputing.ist.ac.at/publications/2019/FundamentalSolutionForWaterWave/
+  paperlink: http://pub.ist.ac.at/group_wojtan/projects/2019_Schreck_FSfWWA/fsww_author_version.pdf
+  image: img/fundamental-solutions.png
+  blurb: "A paper about about very big and very small ripples."
 - title: Non-Linear Shape Optimization Using Local Subspace Projections
   authors: Przemyslaw Musialski*, Christian Hafner*, Florian Rist, Michael Birsak, Michael Wimmer, Leif Kobbelt  (* joint 1st authors)
   date: 2016-07-11
   published: ACM Transactions on Graphics (Siggraph 2016)
   projectpage: https://www.cg.tuwien.ac.at/research/publications/2016/musialski_2016_sosp/
+  paperlink: https://www.cg.tuwien.ac.at/research/publications/2016/musialski_2016_sosp/musialski_2016_sosp-paper_25MB.pdf
+  image: img/local-subspace.png
+  blurb: "A paper about an animal glockenspiel and a beefy kitty."
 - title: Optimization of Natural Frequencies for Fabrication-Aware Shape Modeling
   authors: Christian Hafner, Przemyslaw Musialski, Thomas Auzinger, Michael Wimmer, Leif Kobbelt
   date: 2015-07-31
   published: ACM Siggraph 2015 Posters
   projectpage: https://dl.acm.org/doi/10.1145/2787626.2787644
+  paperlink: ""
+  image: img/bell-poster.png
+  blurb: "A poster about hand-casted tin bells."

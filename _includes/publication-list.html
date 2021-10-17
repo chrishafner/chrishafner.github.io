@@ -1,10 +1,23 @@
 {% assign publications=site.data.publications | sort: "date" | reverse %}
 {% for pub in publications %}
-    <p class="container">
-        <div class="font-weight-bolder lead">{{ pub.title }} {% if forloop.first == true %}<span class="badge bg-success text-white">New</span>{% endif %}</div>
-        <div class="">{{ pub.authors | replace: "Christian Hafner", "<b>Christian Hafner</b>" }}</div>
-        <div class="text-muted small">{{ pub.published }}</div>
-        <a class="text-primary" href="{{ pub.projectpage }}">Project Page</a>
-    </p>
+    <div class="row align-items-center mb-2">
+        <div class="col-2 my-2">
+            {% if pub.paperlink != ""%}
+                <a href="{{ pub.paperlink }}"><img src="{{ pub.image }}" class="img-thumbnail"></a>
+            {% else %}
+                <img src="{{ pub.image }}" class="img-thumbnail">
+            {% endif %}
+        </div>
+        <div class="col-10 container my-2">
+            <div class="font-weight-bolder lead">{{ pub.title }} {% if forloop.first == true %}<span class="badge bg-success text-white">New</span>{% endif %}</div>
+            <div class="">{{ pub.authors | replace: "Christian Hafner", "<b>Christian Hafner</b>" }}</div>
+            <div class="text-muted small">{{ pub.published }}</div>
+            <a class="text-primary mr-1" href="{{ pub.projectpage }}">Project Page</a>
+            {% if pub.paperlink != ""%}
+                <b>|</b> <a class="text-primary mx-1" href="{{ pub.paperlink }}">Paper</a>
+            {% endif %}
+            <div class="mt-1">{{ pub.blurb }}</div>
+        </div>
+    </div>
     {% if forloop.last == false %}{% endif %}
 {% endfor %}
