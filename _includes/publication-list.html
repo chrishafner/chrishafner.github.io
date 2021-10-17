@@ -1,14 +1,14 @@
 {% assign publications=site.data.publications | sort: "date" | reverse %}
 {% for pub in publications %}
     <div class="row align-items-center mb-2">
-        <div class="col-2 my-2">
+        <div class="col-4 col-lg-2 my-2">
             {% if pub.paperlink != ""%}
                 <a href="{{ pub.paperlink }}"><img src="{{ pub.image }}" class="img-thumbnail"></a>
             {% else %}
                 <img src="{{ pub.image }}" class="img-thumbnail">
             {% endif %}
         </div>
-        <div class="col-10 container my-2">
+        <div class="col-8 col-lg-10 container my-2">
             <div class="font-weight-bolder lead">{{ pub.title }} {% if forloop.first == true %}<span class="badge bg-success text-white">New</span>{% endif %}</div>
             <div class="">{{ pub.authors | replace: "Christian Hafner", "<b>Christian Hafner</b>" }}</div>
             <div class="text-muted small">{{ pub.published }}</div>
