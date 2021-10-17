@@ -13,8 +13,14 @@
             <div class="">{{ pub.authors | replace: "Christian Hafner", "<b>Christian Hafner</b>" }}</div>
             <div class="text-muted small">{{ pub.published }}</div>
             <a class="text-primary mr-1" href="{{ pub.projectpage }}">Project Page</a>
-            {% if pub.paperlink != ""%}
-                <b>|</b> <a class="text-primary mx-1" href="{{ pub.paperlink }}">Paper</a>
+            {% if pub.paperlink != "" %}
+                <b>|</b> <a class="text-primary mx-1" href="{{ pub.paperlink }}">
+                    {% if pub.type == "poster" %}
+                        Poster
+                    {% else %}
+                        Paper
+                    {% endif %}
+                </a>
             {% endif %}
             <div class="mt-1">{{ pub.blurb }}</div>
         </div>

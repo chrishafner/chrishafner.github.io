@@ -43,6 +43,7 @@
   date: 2015-07-31
   published: ACM Siggraph 2015 Posters
   projectpage: https://dl.acm.org/doi/10.1145/2787626.2787644
-  paperlink: ""
+  paperlink: "http://pub.ist.ac.at/~chafner/frequency-opt-poster-siggraph-2015.pdf"
   image: img/bell-poster.png
   blurb: "A poster about hand-casted tin bells."
+  type: poster
