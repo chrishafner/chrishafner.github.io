@@ -15,10 +15,10 @@
             <a class="text-primary mr-1" href="{{ pub.projectpage }}">Project Page</a>
             {% if pub.paperlink != "" %}
                 <b>|</b> <a class="text-primary mx-1" href="{{ pub.paperlink }}">
-                    {% if pub.type == "poster" %}
-                        Poster
-                    {% else %}
+                    {% if pub.type == nil %}
                         Paper
+                    {% else %}
+                        {{ pub.type }}
                     {% endif %}
                 </a>
             {% endif %}
