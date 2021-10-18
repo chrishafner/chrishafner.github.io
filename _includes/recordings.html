@@ -1,0 +1,14 @@
+{% assign recordings=site.data.recordings %}
+{% for rec in recordings %}
+    <div class="row align-items-center mb-2" style="border-left: solid 2px lightgrey">
+        <div class="col-lg-4 my-2" >
+            <div class="font-weight-bolder">{{ rec.piece }}</div>
+            <div class="text-muted">{{ rec.composer }}</div>
+        </div>
+        <div class="col-lg-8 container my-2">
+            <div class="mr-4 ml-0">
+                <audio controls style="width: 100%"><source src="{{ rec.path }}" type="audio/mpeg"></audio>
+            </div>
+        </div>
+    </div>
+{% endfor %}
