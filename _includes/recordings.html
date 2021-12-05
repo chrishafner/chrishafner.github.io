@@ -1,14 +1,14 @@
 {% assign recordings=site.data.recordings %}
 {% for rec in recordings %}
     <div class="row align-items-center mb-2" style="border-left: solid 2px lightgrey">
-        <div class="col-lg-4 my-2" >
+        <div class="col-lg-5 my-2" >
             <div class="font-weight-bolder">{{ rec.piece }}</div>
             <div class="d-flex justify-content-between align-items-center">
                 <div class="text-muted">{{ rec.composer }}</div>
                 <div class="text-muted font-italic small">Recorded: {{ rec.recorded }}</div>
             </div>
         </div>
-        <div class="col-lg-8 container my-2">
+        <div class="col-lg-7 container my-2">
             <div class="mr-4 ml-0">
                 <audio controls style="width: 100%"><source src="{{ rec.path }}" type="audio/mpeg"></audio>
             </div>
