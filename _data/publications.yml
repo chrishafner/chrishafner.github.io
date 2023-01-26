@@ -3,7 +3,7 @@
   date: 2021-08-09
   published: ACM Transactions on Graphics (Siggraph 2021)
   projectpage: https://visualcomputing.ist.ac.at/publications/2021/TDSOPEC/
-  paperlink: http://pub.ist.ac.at/~chafner/ElasticCurves2021/elastic-curves-paper.pdf
+  paperlink: http://pub.ista.ac.at/~chafner/ElasticCurves2021/elastic-curves-paper.pdf
   image: img/elastic-curves-grsi-repr.png
   blurb: "A paper about the shapes we can make by bending paper strips."
 - title: "X-CAD: Optimizing CAD Models with Extended Finite Elements"
@@ -19,7 +19,7 @@
   date: 2020-10-06
   published: Computer Graphics Forum (SCA 2020)
   projectpage: https://visualcomputing.ist.ac.at/publications/2020/MPWWBa/
-  paperlink: http://pub.ist.ac.at/~chafner/JeschkeWaveCages.pdf
+  paperlink: http://pub.ista.ac.at/~chafner/JeschkeWaveCages.pdf
   image: img/boundary-waves.png
   blurb: "A paper about beautiful waves rolling up the beach."
 - title: "Fundamental Solutions for Water Wave Animation"
@@ -27,7 +27,7 @@
   date: 2019-07-12
   published: ACM Transactions on Graphics (Siggraph 2019)
   projectpage: https://visualcomputing.ist.ac.at/publications/2019/FundamentalSolutionForWaterWave/
-  paperlink: http://pub.ist.ac.at/group_wojtan/projects/2019_Schreck_FSfWWA/fsww_author_version.pdf
+  paperlink: http://pub.ista.ac.at/group_wojtan/projects/2019_Schreck_FSfWWA/fsww_author_version.pdf
   image: img/fundamental-solutions.png
   blurb: "A paper about about very big and very small ripples."
 - title: Non-Linear Shape Optimization Using Local Subspace Projections
