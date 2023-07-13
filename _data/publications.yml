@@ -1,3 +1,19 @@
+- title: The Design Space of Kirchhoff Rods
+  authors: Christian Hafner, Bernd Bickel
+  date: 2023-12-01
+  published: ACM Transactions on Graphics (Siggraph Asia 2023)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2023/TDSOKR/
+  paperlink: https://research-explorer.ista.ac.at/download/13188/13194/kirchhoff-rods.pdf
+  image: img/kirchhoff-rods.png
+  blurb: "A paper about the shapes we can make by deforming rods in 3D."
+- title: Directionality-Aware Design of Embroidery Patterns
+  authors: Desmond (Zhenyuan) Liu, Michal Piovarči, Christian Hafner, Raphaël Charrondière, Bernd Bickel
+  date: 2023-05-08
+  published: Computer Graphics Forum (Eurographics 2023)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2023/DADoEP/
+  paperlink: https://research-explorer.ista.ac.at/download/12972/12974/Zhenyuan2023.pdf
+  image: img/embroidery.png
+  blurb: "A paper about robotic embroidery."
 - title: The Design Space of Plane Elastic Curves
   authors: Christian Hafner, Bernd Bickel
   date: 2021-08-09
