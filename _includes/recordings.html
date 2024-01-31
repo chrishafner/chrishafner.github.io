@@ -25,7 +25,6 @@
         var audio_element = document.getElementById("audio-player-".concat(i));
         audio_element.onended = (event) => {
             var i_next = (parseInt(event.target.dataset.index) + 1) % num_audio;
-            console.log(i_next);
             var next_audio = document.getElementById("audio-player-".concat(i_next));
             next_audio.currentTime = 0;
             next_audio.play();
