@@ -1,5 +1,7 @@
 {% assign recordings=site.data.recordings %}
-{% for rec in recordings %}
+{% assign n = recordings.size | minus: 1 %}
+{% for i in (0..n) %}
+    {% assign rec = recordings[i] %}
     <div class="row align-items-center mb-2" style="border-left: solid 2px lightgrey">
         <div class="col-lg-5 my-2" >
             <div class="font-weight-bolder">{{ rec.piece }}</div>
@@ -10,8 +12,35 @@
         </div>
         <div class="col-lg-7 container my-2">
             <div class="mr-4 ml-0">
-                <audio controls style="width: 100%"><source src="{{ rec.path }}" type="audio/mpeg"></audio>
+                <audio controls style="width: 100%" id="audio-player-{{ i }}" data-index="{{ i }}"><source src="{{ rec.path }}" type="audio/mpeg"></audio>
             </div>
         </div>
     </div>
 {% endfor %}
+
+<script>
+    var num_audio = {{ recordings.size }};
+    for (var i=0; i < num_audio; i++)
+    {
+        var audio_element = document.getElementById("audio-player-".concat(i));
+        audio_element.onended = (event) => {
+            var i_next = (parseInt(event.target.dataset.index) + 1) % num_audio;
+            console.log(i_next);
+            var next_audio = document.getElementById("audio-player-".concat(i_next));
+            next_audio.currentTime = 0;
+            next_audio.play();
+        };
+
+        audio_element.onplay = (event) => {
+            var i = parseInt(event.target.dataset.index);
+            for (var j=0;j<num_audio;j++)
+            {
+                if (j != i)
+                {
+                    var other_audio = document.getElementById("audio-player-".concat(j));
+                    other_audio.pause();
+                }
+            }
+        };
+    }
+</script>
