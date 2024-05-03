@@ -1,3 +1,11 @@
+- title: "Spin-It Faster: Quadrics Solve All Topology Optimization Problems That Depend Only On Mass Moments"
+  authors: Christian Hafner, Mickaël Ly, Chris Wojtan
+  date: 2024-08-11
+  published: ACM Transactions on Graphics (Siggraph 2024)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2024/SIF/
+  paperlink: https://pub.ista.ac.at/group_wojtan/projects/2024_Hafner_SIF/sif-final.pdf
+  image: img/spin-it-faster.png
+  blurb: "A paper about putting hyperboloids into spinning tops."
 - title: The Design Space of Kirchhoff Rods
   authors: Christian Hafner, Bernd Bickel
   date: 2023-12-01
