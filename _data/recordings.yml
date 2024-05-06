@@ -1,43 +1,42 @@
 - composer: Nikolai Kapustin
-  piece: Suite in the Old Style, Op. 28, I. Allemande
+  piece: Suite in the Old Style, Op. 28
+  startcollection: true
+- piece: I. Allemande
   path: https://pub.ista.ac.at/~chafner/music/kapustin-s28-1.mp3
   recorded: 2024-04-07
-- composer: Nikolai Kapustin
-  piece: Suite in the Old Style, Op. 28, II. Gavotte I – II – I
+- piece: II. Gavotte I – II – I
   path: https://pub.ista.ac.at/~chafner/music/kapustin-s28-2.mp3
   recorded: 2024-04-18
-- composer: Nikolai Kapustin
-  piece: Suite in the Old Style, Op. 28, III. Sarabande
+- piece: III. Sarabande
   path: https://pub.ista.ac.at/~chafner/music/kapustin-s28-3.mp3
   recorded: 2024-04-19
+- endcollection: true
 - composer: Nikolai Medtner
   piece: 4 Tales, Op. 26, I. Allegretto frescamente
   path: https://pub.ista.ac.at/~chafner/music/medtner-4tales-1.mp3
   recorded: 2024-02-18
 - composer: Nikolai Kapustin
-  piece: 6 Little Pieces, Op. 133, I. Allegro moderato
+  piece: 6 Little Pieces, Op. 133
+  startcollection: true
+- piece: I. Allegro moderato
   path: https://pub.ista.ac.at/~chafner/music/kapustin-lp-1.mp3
   recorded: 2023-07-25
-- composer: Nikolai Kapustin
-  piece: 6 Little Pieces, Op. 133, II. Comodo
+- piece: II. Comodo
   path: https://pub.ista.ac.at/~chafner/music/kapustin-lp-2.mp3
   recorded: 2023-09-14
-- composer: Nikolai Kapustin
-  piece: 6 Little Pieces, Op. 133, III. Allegretto
+- piece: III. Allegretto
   path: https://pub.ista.ac.at/~chafner/music/kapustin-lp-3.mp3
   recorded: 2023-09-25
-- composer: Nikolai Kapustin
-  piece: 6 Little Pieces, Op. 133, IV. Larghetto
+- piece: IV. Larghetto
   path: https://pub.ista.ac.at/~chafner/music/kapustin-lp-4.mp3
   recorded: 2023-09-27
-- composer: Nikolai Kapustin
-  piece: 6 Little Pieces, Op. 133, V. Allegro scherzando
+- piece: V. Allegro scherzando
   path: https://pub.ista.ac.at/~chafner/music/kapustin-lp-5.mp3
   recorded: 2023-10-08
-- composer: Nikolai Kapustin
-  piece: 6 Little Pieces, Op. 133, VI. Allegro non troppo
+- piece: VI. Allegro non troppo
   path: https://pub.ista.ac.at/~chafner/music/kapustin-lp-6.mp3
   recorded: 2024-01-07
+- endcollection: true
 - composer: Nikolai Medtner
   piece: 6 Tales, Op. 51, III. Allegretto tranquilo e grazioso
   path: https://pub.ista.ac.at/~chafner/music/med51-3.mp3
@@ -47,21 +46,25 @@
   path: https://pub.ista.ac.at/~chafner/music/Kap_pre11.mp3
   recorded: 2021-10-17
 - composer: Nikolai Kapustin
-  piece: 10 Inventions, Op. 73, III. Allegretto giocoso
+  piece: 10 Inventions, Op. 73
+  startcollection: true
+- piece: III. Allegretto giocoso
   path: https://pub.ista.ac.at/~chafner/music/kapustin_invention_3.mp3
   recorded: 2021-12-05
-- composer: Nikolai Kapustin
-  piece: 10 Inventions, Op. 73, V. Grave
+- piece: V. Grave
   path: https://pub.ista.ac.at/~chafner/music/kapustin_invention_5.mp3
   recorded: 2021-12-05
+- endcollection: true
 - composer: Claude Delvincourt
-  piece: Croquembouches, II. Linzer tart
+  piece: Croquembouches
+  startcollection: true
+- piece: II. Linzer tart
   path: https://pub.ista.ac.at/~chafner/music/del_cr_linzer_tart_v2.mp3
   recorded: 2021-10-31
-- composer: Claude Delvincourt
-  piece: Croquembouches, IX. Baba
+- piece: IX. Baba
   path: https://pub.ista.ac.at/~chafner/music/del_cr_baba.mp3
   recorded: 2021-11-28
+- endcollection: true
 - composer: Paul Hindemith
   piece: Piano Sonata No. 3, I. Ruhig bewegt
   path: https://pub.ista.ac.at/~chafner/music/hindemith_ps3_1.mp3

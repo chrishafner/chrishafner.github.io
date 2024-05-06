@@ -1,28 +1,61 @@
 {% assign recordings=site.data.recordings %}
 {% assign n = recordings.size | minus: 1 %}
+{% assign reci = 0 %}
+{% assign incol = false %}
+{% assign colindex = 0 %}
 {% for i in (0..n) %}
     {% assign rec = recordings[i] %}
-    <div class="row align-items-center mb-2" style="border-left: solid 2px lightgrey">
-        <div class="col-lg-5 my-2" >
-            <div class="font-weight-bolder">{{ rec.piece }}</div>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="text-muted">{{ rec.composer }}</div>
-                <div class="text-muted font-italic small">Recorded: {{ rec.recorded }}</div>
-            </div>
+    {% if rec.startcollection != nil %}
+        {% assign incol = true %}
+        {% assign colindex = i %}
+        <div data-toggle="collapse" class="row mb-2 my-2 piececol collapsed" data-target="#col-{{ colindex }}"><div class="col-lg-12">
+            <div class="font-weight-bolder"><i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i> {{ rec.piece }}</div>
+            <div class="text-muted">{{ rec.composer }}</div>
+        </div></div>
+
+        <div id="col-{{ colindex }}" class="collapse">
+    {% elsif rec.endcollection != nil %}
+        {% assign incol = false %}
         </div>
-        <div class="col-lg-7 container my-2">
-            <div class="mr-4 ml-0">
-                <audio controls style="width: 100%" id="audio-player-{{ i }}" data-index="{{ i }}"><source src="{{ rec.path }}" type="audio/mpeg"></audio>
+    {% else %}
+        <div class="row align-items-center mb-2" style="border-left: solid 2px lightgrey">
+            {% if incol %}
+            <div class="col-lg-5 my-2 pl-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="font-weight-bolder">{{ rec.piece }}</div>
+                    <div class="text-muted font-italic small">Recorded: {{ rec.recorded }}</div>
+                </div>
             </div>
+            <div class="col-lg-7 container">
+                <div class="mr-4 ml-0">
+                    <audio controls style="width: 100%; height: 30px" id="audio-player-{{ reci }}" data-index="{{ reci }}" data-col="col-{{ colindex }}"><source src="{{ rec.path }}" type="audio/mpeg"></audio>
+                </div>
+            </div>
+            {% else %}
+            <div class="col-lg-5 my-2">
+                <div class="font-weight-bolder">{{ rec.piece }}</div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-muted">{{ rec.composer }}</div>
+                    <div class="text-muted font-italic small">Recorded: {{ rec.recorded }}</div>
+                </div>
+            </div>
+            <div class="col-lg-7 container my-2">
+                <div class="mr-4 ml-0">
+                    <audio controls style="width: 100%;" id="audio-player-{{ reci }}" data-index="{{ reci }}"><source src="{{ rec.path }}" type="audio/mpeg"></audio>
+                </div>
+            </div>
+            {% endif %}
         </div>
-    </div>
+        {% assign reci = reci | plus: 1 %}
+    {% endif %}
 {% endfor %}
 
 <script>
-    var num_audio = {{ recordings.size }};
+    var num_audio = {{ reci }};
     for (var i=0; i < num_audio; i++)
     {
         var audio_element = document.getElementById("audio-player-".concat(i));
+        var last_col = "";
         audio_element.onended = (event) => {
             var i_next = (parseInt(event.target.dataset.index) + 1) % num_audio;
             var next_audio = document.getElementById("audio-player-".concat(i_next));
@@ -32,6 +65,11 @@
 
         audio_element.onplay = (event) => {
             var i = parseInt(event.target.dataset.index);
+            if ("col" in event.target.dataset)
+            {
+                var col = event.target.dataset.col;
+                $('#'.concat(col)).collapse('show');
+            }
             for (var j=0;j<num_audio;j++)
             {
                 if (j != i)
