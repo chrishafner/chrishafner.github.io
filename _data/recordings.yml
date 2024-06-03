@@ -65,10 +65,13 @@
 - composer: Claude Delvincourt
   piece: Croquembouches
   startcollection: true
-- piece: II. Linzer tart
+- piece: I. ...Omelette au rhum
+  path: https://pub.ista.ac.at/~chafner/music/croque-1.mp3
+  recorded: 2024-06-03
+- piece: II. ...Linzer tart
   path: https://pub.ista.ac.at/~chafner/music/del_cr_linzer_tart_v2.mp3
   recorded: 2021-10-31
-- piece: IX. Baba
+- piece: IX. ...Baba
   path: https://pub.ista.ac.at/~chafner/music/del_cr_baba.mp3
   recorded: 2021-11-28
 - endcollection: true
