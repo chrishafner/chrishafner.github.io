@@ -9,7 +9,10 @@
             {% endif %}
         </div>
         <div class="col-lg-10 container my-2">
-            <div class="font-weight-bolder lead">{{ pub.title }} {% if forloop.first == true %}<span class="badge bg-success text-white">New</span>{% endif %}</div>
+            <div class="font-weight-bolder lead">{{ pub.title }}
+                {% if pub.badge != "" %}<span class="badge badge-primary text-white">{{ pub.badge }}</span>{% endif %}
+                {% if forloop.first == true %}<span class="badge bg-success text-white">New</span>{% endif %}
+            </div>
             <div class="">{{ pub.authors | replace: "Christian Hafner", "<b>Christian Hafner</b>" }}</div>
             <div class="text-muted small">{{ pub.published }}</div>
             <a class="text-primary mr-1" href="{{ pub.projectpage }}">Project Page</a>
