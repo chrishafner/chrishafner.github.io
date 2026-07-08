@@ -1,3 +1,27 @@
+- title: "Physics-Inspired Procedural Texturing of Extremely Deformable Surfaces"
+  authors: Aleksei Kalinov, Mickaël Ly, Christian Hafner, Chris Wojtan
+  date: 2026-07-03
+  published: ACM Transactions on Graphics (Siggraph 2026)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2026/DeformableTextures/
+  paperlink: https://research-explorer.ista.ac.at/download/21923/21927/tog454-article154-main-1.pdf
+  image: img/textures.jpg
+  blurb: "A paper about lava, sludge, and paint."
+- title: "Fast and Exact Winding Numbers for Triangle Meshes"
+  authors: Peiyuan Xie, Christian Hafner, Chris Wojtan
+  date: 2026-07-03
+  published: ACM Transactions on Graphics (Siggraph 2026)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2026/FEWN/
+  paperlink: https://research-explorer.ista.ac.at/download/22241/22249/2026_TransactionsGraphics_Xie.pdf
+  image: img/winding-numbers.jpg
+  blurb: "A paper about casting rays and attaching cones."
+- title: "Circles of Confidence for Multi-Label Geometry Completion"
+  authors: Alice Ziyu Wei, Christian Hafner, Aleksei Kalinov, Peter Heiss-Synak, Chris Wojtan
+  date: 2026-05-28
+  published: Computer Graphics Forum (SGP 2026)
+  projectpage: https://visualcomputing.ist.ac.at/publications/2026/CirclesConfidence/
+  paperlink: https://research-explorer.ista.ac.at/download/22129/22132/document%283%29.pdf
+  image: img/coc.jpg
+  blurb: "A paper about filling holes by drawing circles."
 - title: "Spin-It Faster: Quadrics Solve All Topology Optimization Problems That Depend Only On Mass Moments"
   authors: Christian Hafner, Mickaël Ly, Chris Wojtan
   date: 2024-08-11
